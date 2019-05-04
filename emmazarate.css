@@ -30,21 +30,21 @@ body {
 }
 
 .main-banner #imgban3 {
-    background-image: url(Banners/banner3.jpg);
+    background-image: url(banner3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .main-banner #imgban2 {
-    background-image: url(Banners/banner2.png);
+    background-image: url(banner2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .main-banner #imgban1 {
-    background-image: url(Banners/banner1.jpg);
+    background-image: url(banner1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
