@@ -1,6 +1,7 @@
 body {
-    background: url("https://i.imgur.com/EWlRuez.jpg");
-    background-image: center;    
+    background: no-repeat url("https://i.imgur.com/EWlRuez.jpg");
+    background-position: center;
+    background-size: cover;   
     color: white;
     font-family: 'Petit Formal Script', cursive;
     text-align: center;
@@ -9,10 +10,51 @@ body {
     margin-right: 25%;
 }
 
-/* p {
-   
-} */
+input {
+    background-color: rgba(0, 128, 128,0);
+    color: white;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.quote {
+    background-color: rgba(3, 7, 7, .4);
+    padding: 20px;
+    font-family: 'Cutive Mono', monospace;
+}
 
 .winner {
     color: greenyellow;
+}
+
+.back,
+.butt {
+    background-color: rgba(0, 128, 128,.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 22px;
+    border-radius: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.back a {
+    text-decoration: none;
+    color: white;
+}
+
+.back a:hover {
+    color: grey;
+}
+.gimmespace {
+    height: 300px;
+}
+iframe {
+    height: 50px;
+    position: bottom;
 }

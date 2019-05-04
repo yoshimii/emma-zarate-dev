@@ -67,7 +67,44 @@ button {
     outline: none; 
 }
 
+.back {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700; 
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit; 
+    transition: all .3s;
+    --webkit-transition: all: 0.3s;
+    --moz-transition: all 0.3s;
+    outline: none;
+
+}
+
+.back a {
+    text-decoration: none;
+    color: steelblue;
+}   
+
+.back a:hover {
+    color: white; 
+    background: steelblue;
+}
+
 button:hover {
     color: white; 
     background: steelblue;
 }
+
+/* /* #stripe2 {
+    background: black;
+    height: 30px;
+    text-align: center; 
+    color: black;
+    position: absolute;
+    bottom: 0;
+    
+} */
+

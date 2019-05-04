@@ -70,13 +70,13 @@ body {
 }
 
 .imgbanbtn:hover {
-    opacity: .9;
+    opacity: .8;
 }
 
 .imgbanbtn-prev {
     left: 5px;
     background-image: url(arrow-left.png);
-    background-size: 60%;
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -84,7 +84,7 @@ body {
 .imgbanbtn-next {
     right: 5px;
     background-image: url(arrow-right.png);
-    background-size: 60%;
+    background-size: 68%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -92,7 +92,7 @@ body {
 .navbar {    
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 11px;
     justify-content: space-between;
     padding-bottom: 0;
     align-items: center;
@@ -107,10 +107,6 @@ body {
 .logo {
     text-decoration: none;
     color: gainsboro;
-}
-
-.site-links {
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 nav {
@@ -208,5 +204,31 @@ a:visited {
     list-style-type: none;
     text-transform: uppercase;
     text-decoration: none;
+    color: white;
 
+}
+
+
+
+.back {
+    background-color:rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gimmespace {
+    height: 300px;
+}
+
+.aboutme {
+    padding: 200px;
+    justify-content: center;
+    text-align: center;
 }
