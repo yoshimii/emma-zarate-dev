@@ -9,14 +9,92 @@ body {
     background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
+.main-banner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;    
+}
+
+.main-banner .imgban {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+}
+
+.main-banner #imgban3 {
+    background-image: url(Banners/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner #imgban2 {
+    background-image: url(Banners/banner2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner #imgban1 {
+    background-image: url(Banners/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgbanbtn {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    top: 180px;
+    z-index: 2000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.imgbanbtn:hover {
+    opacity: .9;
+}
+
+.imgbanbtn-prev {
+    left: 5px;
+    background-image: url(step-backward-solid.svg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgbanbtn-next {
+    right: 5px;
+    background-image: url(step-forward-solid.svg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .navbar {    
     font-family: 'Rock Salt', cursive;
     text-transform: uppercase;
     font-size: 10px;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
     }
 .main-nav {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 .site-links,
 .logo {
