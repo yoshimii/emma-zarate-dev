@@ -1,0 +1,18 @@
+body {
+    background: url("https://i.imgur.com/EWlRuez.jpg");
+    background-image: center;    
+    color: white;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* p {
+   
+} */
+
+.winner {
+    color: greenyellow;
+}

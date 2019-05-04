@@ -28,6 +28,23 @@ document.getElementById("main-banner").onmouseleave = function(){
     
 }
 
+document.getElementById("imgbanbtn-prev").onclick = function(){
+    if (bannerStatus === 1) {
+        bannerStatus = 2;
+    }
+    else if (bannerStatus === 2) {
+        bannerStatus = 3;
+    }
+    else if (bannerStatus === 3) {
+        bannerStatus = 1;
+    }
+        bannerLoop();
+}
+
+document.getElementById("imgbanbtn-next").onclick = function(){
+    bannerLoop();
+}
+
 function bannerLoop(){
     if (bannerStatus === 1) {
         document.getElementById("imgban2").style.opacity = "0";
