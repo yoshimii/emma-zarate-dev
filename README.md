@@ -1,2 +1,1 @@
-# emma-zarate-dev
-Repo for my portfolio
+Welcome to Emma Zarate's WIP. 
