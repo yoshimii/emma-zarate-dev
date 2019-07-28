@@ -9,9 +9,10 @@ body {
   font-family: 'Condensed Open Sans', sans-serif;
 }
 .container {
+  display: flex;
+  flex-direction: column;
   width: 800px;
   margin: 0 auto;
-  border: 1px solid #37FDFC;
 }
 h1,
 h2,
@@ -48,8 +49,10 @@ ul {
   list-style: none;
 }
 header {
+  grid-area: header;
   background-color: #37FDFC;
   display: flex;
+  grid-template-areas: 1fr 1fr;
 }
 header .logo {
   display: flex;
@@ -70,6 +73,22 @@ header .nav-links a {
   font-size: 1.3rem;
   box-shadow: 1px 1px 1px 1px;
 }
-p {
-  color: yellow;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "sidebar main" "footer footer";
+  grid-gap: 50px;
+}
+.sidebar {
+  font-size: 5rem;
+  height: 100vh;
+  text-align: center;
 }

@@ -1,6 +1,8 @@
 header {
+    grid-area: header;
     background-color: #37FDFC;
     display: flex;
+    grid-template-areas: 1fr 1fr;
     .logo {
         display: flex;
         margin: 0 1.2rem;
@@ -22,4 +24,16 @@ header {
             box-shadow: 1px 1px 1px 1px;
         }        
     }
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
