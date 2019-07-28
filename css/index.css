@@ -96,10 +96,10 @@ header .nav-links .contact-link {
 }
 .sidebar {
   font-size: 5rem;
-  height: 100vh;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   text-align: center;
+  margin-bottom: 10%;
 }
 .projects-box {
   display: grid;
