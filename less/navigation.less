@@ -1,13 +1,14 @@
 header {
     grid-area: header;
-    background-color: #37FDFC;
     display: flex;
     grid-template-areas: 1fr 1fr;
+
     .logo {
         display: flex;
         margin: 0 1.2rem;
         h1 {
             font-size: 2rem;
+            color: lavender
         }
     }
     .nav-links {
@@ -21,7 +22,19 @@ header {
         a {
             margin: 0 1.2rem;
             font-size: 1.3rem;
-            box-shadow: 1px 1px 1px 1px;
+            width: 8rem;
+            height: 1.5rem;
+            font-size: 1.7rem;
+            color: lavender;
+            font-weight: bold;
+
+
+        }
+        .projects-link {
+            color: #5a037b;
+        }
+        .contact-link {
+            color: #3d7fdb;
         }        
     }
 }

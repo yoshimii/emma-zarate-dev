@@ -7,6 +7,7 @@ html {
 html,
 body {
   font-family: 'Condensed Open Sans', sans-serif;
+  background-color: #1d1e22;
 }
 .container {
   display: flex;
@@ -20,6 +21,7 @@ h3,
 h4,
 h5 {
   font-family: 'Open Sans', sans-serif;
+  color: lavender;
 }
 h1 {
   font-size: 4rem;
@@ -36,6 +38,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  color: lavender;
 }
 img {
   max-width: 100%;
@@ -50,7 +53,6 @@ ul {
 }
 header {
   grid-area: header;
-  background-color: #37FDFC;
   display: flex;
   grid-template-areas: 1fr 1fr;
 }
@@ -60,6 +62,7 @@ header .logo {
 }
 header .logo h1 {
   font-size: 2rem;
+  color: lavender;
 }
 header .nav-links {
   display: flex;
@@ -71,7 +74,17 @@ header .nav-links {
 header .nav-links a {
   margin: 0 1.2rem;
   font-size: 1.3rem;
-  box-shadow: 1px 1px 1px 1px;
+  width: 8rem;
+  height: 1.5rem;
+  font-size: 1.7rem;
+  color: lavender;
+  font-weight: bold;
+}
+header .nav-links .projects-link {
+  color: #5a037b;
+}
+header .nav-links .contact-link {
+  color: #3d7fdb;
 }
 .wrapper {
   display: grid;
@@ -92,5 +105,10 @@ header .nav-links a {
   display: grid;
   grid-template-columns: 2, 0.5fr;
   grid-template-areas: "project-1 project-2" "project-3 project-4";
-  grid-gap: 1.2rem;
+  grid-gap: 20px 20px;
+}
+.projects-box .box .projects-box {
+  height: 250px;
+  width: 250px;
+  margin: 0;
 }
