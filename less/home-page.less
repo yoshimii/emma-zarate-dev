@@ -4,11 +4,25 @@
     grid-template-areas:
     "sidebar main"
     "footer footer";
-    grid-gap: 50px;
+    grid-gap: 1.2rem;
+
+    display: flex;
+    flex-direction: row;
 }
 
 .sidebar {
     font-size: 5rem;
     height: 100vh;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     text-align: center;
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: 2, .5fr;
+    grid-template-areas:
+    "project-1 project-2"
+    "project-3 project-4";
+    grid-gap: 1.2rem;
 }
