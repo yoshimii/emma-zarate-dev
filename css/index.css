@@ -6,25 +6,26 @@ html {
 }
 html,
 body {
-  font-family: 'Condensed Open Sans', sans-serif;
-  background-color: #1d1e22;
+  font-family: 'Oswald', sans-serif;
 }
 .container {
   display: flex;
   flex-direction: column;
-  width: 800px;
-  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 5% 0 0;
+  background-color: #F7DD23;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans', sans-serif;
-  color: lavender;
+  font-family: 'Exo 2', sans-serif;
+  color: #2E2F43;
 }
 h1 {
   font-size: 4rem;
+  font-family: 'Exo 2', sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -38,7 +39,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
-  color: lavender;
+  color: #2E2F43;
 }
 img {
   max-width: 100%;
@@ -46,30 +47,38 @@ img {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #2E2F43;
+  font-family: 'Exo 2', sans-serif;
 }
 ul {
   list-style: none;
 }
+.sidebar {
+  font-family: 'Exo 2', sans-serif;
+}
 header {
+  color: black;
   grid-area: header;
   display: flex;
   grid-template-areas: 1fr 1fr;
+  justify-content: space-between;
 }
 header .logo {
   display: flex;
-  margin: 0 1.2rem;
+  margin: 0 0 0 5%;
 }
 header .logo h1 {
   font-size: 2rem;
-  color: lavender;
+  color: #2E2F43;
+  white-space: nowrap;
 }
 header .nav-links {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 80%;
+  max-width: 100%;
   text-align: center;
+  margin: 0;
+  color: black;
 }
 header .nav-links a {
   margin: 0 1.2rem;
@@ -77,14 +86,11 @@ header .nav-links a {
   width: 8rem;
   height: 1.5rem;
   font-size: 1.7rem;
-  color: lavender;
+  color: black;
   font-weight: bold;
 }
-header .nav-links .projects-link {
-  color: #5a037b;
-}
-header .nav-links .contact-link {
-  color: #3d7fdb;
+footer {
+  margin: 5%;
 }
 .wrapper {
   display: grid;
@@ -93,6 +99,11 @@ header .nav-links .contact-link {
   grid-gap: 1.2rem;
   display: flex;
   flex-direction: row;
+}
+.about-title {
+  margin: 1% 0 0 0;
+  border-top: 2px solid white;
+  padding: 5% 0 0 0;
 }
 .sidebar {
   font-size: 5rem;

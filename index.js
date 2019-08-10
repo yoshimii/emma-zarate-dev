@@ -1,13 +1,10 @@
-// window.onload = function(){
-//     document.getElementById("proj-link").onclick = function() {
-//     document.getElementById("sidebar").innerHTML = "Projects!";
-//     document.getElementById("sidebar").style = "color: #5a037b";
-// }
-// }
+window.addEventListener('load', function(){
+    let sidebar = document.querySelector('.sidebar');
+    let project = document.querySelector('#project-link');
+    project.addEventListener('click', (e)=>{
+        sidebar.textContent = "Projects";
+        project.style.color = @purple;
+    })    
 
-window.onload = function() {
-    document.getElementById("proj-link").onclick = function(){
-        document.getElementById("sidebar").style.color = "#5a037b";
-        document.getElementById("sidebar").innerHTML = "Projects";
-}
-}
+
+})
