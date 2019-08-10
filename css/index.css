@@ -20,6 +20,7 @@ body {
     background-color: lightblue;
     min-height: 100%;
     min-width: 100%;
+    overflow: hidden;
   }
 }
 h1,
@@ -70,6 +71,12 @@ header {
   grid-template-areas: 1fr 1fr;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: lightblue;
+    overflow: hidden;
+  }
+}
 header .logo {
   display: flex;
   margin: 0 0 0 5%;
@@ -87,6 +94,16 @@ header .nav-links {
   margin: 0;
   color: black;
 }
+@media only screen and (max-width: 600px) {
+  header .nav-links {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 5% 0 0;
+    padding: 0 5% 0 0;
+  }
+}
 header .nav-links a {
   margin: 0 1.2rem;
   font-size: 1.3rem;
@@ -95,6 +112,13 @@ header .nav-links a {
   font-size: 1.7rem;
   color: black;
   font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  header .nav-links a {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
 }
 footer {
   margin: 5%;
@@ -106,6 +130,7 @@ footer {
   grid-gap: 1.2rem;
   display: flex;
   flex-direction: row;
+  min-height: 100%;
 }
 .about-title {
   margin: 1% 0 0 0;
