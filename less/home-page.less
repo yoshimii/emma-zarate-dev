@@ -1,25 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#flex-grid-box {
+    height: 100%;
+}
+
 .wrapper {
     display: grid;
-    grid-template-columns: 21.5% 10.5% 69%;
-    grid-template-rows: 40% 40% 10%;
+    align-content: stretch;
+    grid-template-columns: 2fr 1fr 7fr;
+    grid-template-rows: 1fr 1fr;
    grid-template-areas: 
    "flower about about-text"
-   "contact projects projects-carousel"
-   "footer footer footer";
-    grid-gap: 1.2rem;
+   "contact projects projects-carousel";
+    grid-gap: 2%;
+    justify-content: center;
+    align-content: start;
+    background-color: #F7DD23;
+    border: 2px solid blue;
+    height: 100%;
+    // position: absolute;
+}
+
+#flower, #contact {
+    place-self: center;
 }
 
 #about, #projects {
 
-    font-size: 3rem;
+    font-size: 2rem;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    text-align: center;
-    align-items: center;
+    place-self: center;
     font-family: 'Exo 2', sans-serif;
 }
 
 #about-text {
     text-align: center;
     align-self: center;
+    place-self: center;
+    padding: 5%;
+    line-height: 1.5;
+}
+
+#projects-carousel {
+    place-self: center;
 }
