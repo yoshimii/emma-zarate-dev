@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border: 2px solid white;
 }
 html {
   font-size: 62.5%;
@@ -7,13 +8,14 @@ html {
 html,
 body {
   font-family: 'Oswald', sans-serif;
+  height: 100%;
 }
 .container {
-  display: flex;
-  flex-direction: column;
   padding: 0 5% 0 0;
   background-color: #F7DD23;
   margin: auto 0;
+  height: 100%;
+  width: 100%;
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -45,7 +47,6 @@ h4 {
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
   color: #2E2F43;
 }
 img {
@@ -59,9 +60,6 @@ a {
 }
 ul {
   list-style: none;
-}
-.sidebar {
-  font-family: 'Exo 2', sans-serif;
 }
 header {
   color: black;
@@ -118,38 +116,23 @@ header .nav-links a {
     height: 1rem;
   }
 }
-footer {
-  margin: 5%;
-}
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: "sidebar main" "footer footer";
+  grid-template-columns: 21.5% 10.5% 69%;
+  grid-template-rows: 40% 40% 10%;
+  grid-template-areas: "flower about about-text" "contact projects projects-carousel" "footer footer footer";
   grid-gap: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  min-height: 100%;
 }
-.about-title {
-  margin: 1% 0 0 0;
-  border-top: 2px solid white;
-  padding: 5% 0 0 0;
-}
-.sidebar {
-  font-size: 5rem;
+#about,
+#projects {
+  font-size: 3rem;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   text-align: center;
-  margin-bottom: 10%;
+  align-items: center;
+  font-family: 'Exo 2', sans-serif;
 }
-.projects-box {
-  display: grid;
-  grid-template-columns: 2, 0.5fr;
-  grid-template-areas: "project-1 project-2" "project-3 project-4";
-  grid-gap: 20px 20px;
-}
-.projects-box .box .projects-box {
-  height: 250px;
-  width: 250px;
-  margin: 0;
+#about-text {
+  text-align: center;
+  align-self: center;
 }

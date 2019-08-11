@@ -1,50 +1,25 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-    "sidebar main"
-    "footer footer";
+    grid-template-columns: 21.5% 10.5% 69%;
+    grid-template-rows: 40% 40% 10%;
+   grid-template-areas: 
+   "flower about about-text"
+   "contact projects projects-carousel"
+   "footer footer footer";
     grid-gap: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    min-height: 100%;
 }
 
-.about-title {
-    margin: 1% 0 0 0;
-    border-top: 2px solid white;
-    padding: 5% 0 0 0;
-}
+#about, #projects {
 
-.sidebar {
-
-    font-size: 5rem;
+    font-size: 3rem;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     text-align: center;
-    margin-bottom: 10%;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
 }
 
-.projects-box {
-    display: grid;
-    grid-template-columns: 2, .5fr;
-    grid-template-areas:
-    "project-1 project-2"
-    "project-3 project-4";
-    grid-gap: 20px 20px;
-
-    .box .projects-box {
-        height: 250px;
-        width: 250px;
-        margin: 0;
-    }
-
-    // @media @mobile {
-    //     display: flex;
-    //     flex-direction: column;
-
-    //     img {
-    //         display: none;
-    //     }
-    // }
+#about-text {
+    text-align: center;
+    align-self: center;
 }
