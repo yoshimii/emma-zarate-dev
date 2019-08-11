@@ -36,6 +36,8 @@
     font-family: 'Exo 2', sans-serif;
     font-weight: bold;
     color: white;
+
+
 }
 
 #about-text {
@@ -45,6 +47,10 @@
     padding: 10%;
     line-height: 1.5;
     font-size: 2.5rem;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 1rem;
+    }
 }
 
 #projects-carousel {
@@ -57,6 +63,9 @@
 
     i {
         color: white;
+        @media only screen and (max-width: 600px) {
+        font-size: 2rem;
+        }
     }
     ul {
         list-style-position: outside;
