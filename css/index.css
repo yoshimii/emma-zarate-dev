@@ -71,6 +71,7 @@ header {
 @media only screen and (max-width: 600px) {
   header {
     overflow: hidden;
+    margin-top: 2.5%;
   }
 }
 header .logo {
@@ -81,6 +82,11 @@ header .logo h1 {
   font-size: 3rem;
   color: #FFF;
   white-space: nowrap;
+}
+@media only screen and (max-width: 600px) {
+  header .logo h1 {
+    font-size: 2rem;
+  }
 }
 header .nav-links {
   display: flex;
@@ -122,6 +128,9 @@ header .nav-links .projects-link {
 footer {
   text-align: center;
 }
+footer h3 {
+  font-weight: 300;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -156,6 +165,12 @@ footer {
   font-weight: bold;
   color: white;
 }
+@media only screen and (max-width: 600px) {
+  #about,
+  #projects {
+    font-size: 1rem;
+  }
+}
 #about-text {
   text-align: center;
   align-self: center;
@@ -177,13 +192,19 @@ footer {
   font-size: 2rem;
   width: 100%;
 }
+@media only screen and (max-width: 600px) {
+  #contact {
+    font-size: 1rem;
+  }
+}
 #contact i {
   font-size: 2rem;
   color: white;
 }
 @media only screen and (max-width: 600px) {
   #contact i {
-    font-size: 2rem;
+    font-size: 1rem;
+    margin: 5%;
   }
 }
 #contact ul {
