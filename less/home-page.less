@@ -25,6 +25,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+
+    @media only screen and (max-width: 600px) {
+
+        grid-template-columns: 2fr 8fr;
+        grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "about about-text"
+       "projects projects-carousel"
+       "contact contact";
+    }
+
+
+
+
 }
 
 #flower, #contact {
@@ -41,7 +55,7 @@
     font-weight: bold;
     color: white;
     @media only screen and (max-width: 600px) {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
 }
@@ -53,14 +67,15 @@
     padding: 10%;
     line-height: 1.5;
     font-size: 1.8rem;
-    font-weight: bold;
+  
     hr {
-        style: black;
+        border: solid black;
     }
    
 
     @media only screen and (max-width: 600px) {
-        font-size: 1rem;
+        font-size: 3rem;
+        line-height: 1.1;
     }
 }
 
@@ -95,4 +110,15 @@
             margin: 0;
         }
     }
+}
+
+#flower, #contact {
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+#contact-2 {
+    text-align: center;
+    margin-top: 5%;
 }
