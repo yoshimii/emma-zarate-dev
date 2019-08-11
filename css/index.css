@@ -116,8 +116,11 @@ header .nav-links a {
     height: 1rem;
   }
 }
-header .nav-links .contact-link {
+header .nav-links .projects-link {
   color: #3d7fdb;
+}
+footer {
+  text-align: center;
 }
 .container {
   display: flex;
@@ -150,6 +153,7 @@ header .nav-links .contact-link {
   text-orientation: mixed;
   place-self: center;
   font-family: 'Exo 2', sans-serif;
+  font-weight: bold;
 }
 #about-text {
   text-align: center;
