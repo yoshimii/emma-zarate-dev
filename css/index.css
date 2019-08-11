@@ -168,5 +168,13 @@ footer {
   place-self: center;
 }
 #contact {
+  text-align: center;
   font-size: 2rem;
+}
+#contact i {
+  color: white;
+}
+#contact ul {
+  list-style-position: outside;
+  padding: 0;
 }
