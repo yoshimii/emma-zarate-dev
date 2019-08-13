@@ -1,20 +1,20 @@
 window.addEventListener('load', function(){
-    // let sidebar = document.querySelector('.sidebar');
-    // let project = document.querySelector('#project-link');
-    // project.addEventListener('click', (e)=>{
-    //     sidebar.textContent = "Projects";
-    //     project.style.color = @purple;
-    // })    
-// let entryPoint = document.querySelector("#projects-div");
+    let sidebar = document.querySelector('.sidebar');
+    let project = document.querySelector('#project-link');
+    project.addEventListener('click', (e)=>{
+        sidebar.textContent = "Projects";
+    })    
+let entryPoint = document.querySelector("#projects-div");
 
-// axios.get("https://api.github.com/users/yoshimii/repos")
-// .then((response)=> {
-//     response.data.forEach(repo => {
-//         let newRepo = repo;
-//         entryPoint.appendChild(projectsList(newRepo));
-//     });
+axios.get("https://api.github.com/users/yoshimii/repos")
+.then((response)=> {
+    response.data.forEach(repo => {
+        let newRepo = repo;
+        entryPoint.appendChild(projectsList(newRepo));
+    });
+    this.console.log(response);
     
-// })
+})
 // .then((response)=> {
 //     response.forEach((element)=>{
 //         axios.get(`${element.languages_url}`)
@@ -31,9 +31,9 @@ window.addEventListener('load', function(){
     //     entryPoint.appendChild(projectsList(newLang));
     // })
 // })
-// .catch((err)=> {
-//     this.console.log(err);
-// }) 
+.catch((err)=> {
+    this.console.log(err);
+}) 
 
 
 function projectsList(repoData, languages) {
@@ -41,23 +41,25 @@ function projectsList(repoData, languages) {
     project.classList.add("project-item");
 
     let repoName = document.createElement('div');
-    repoName.classList.add('repo-name');
-    repoName.textContent = repoData.name;
+    // repoName.classList.add('repo-name');
+    // repoName.textContent = repoData.name;
 
     let repoLink = document.createElement('a');
     repoLink.classList.add('repo-link');
-    repoLink.setAttribute('src', repoData.html_url);
+    repoLink.textContent = `Title: ${repoData.name}`;
+    repoLink.setAttribute('href', repoData.html_url);
+    repoLink.style.textAlign = "center";
+    
 
     let repoDesc = document.createElement('div');
-    repoDesc.textContent = repoData.description;
+    repoDesc.textContent = `Desc.: ${repoData.description}`;
     
     let repoLangs = document.createElement('div');
     repoLangs.classList.add('repo-lang');
     repoLangs.textContent = languages;
 
-    project.appendChild(repoName);
-    project.appendChild(repoDesc);
     project.appendChild(repoLink);
+    project.appendChild(repoDesc);
     project.appendChild(repoLangs);
 
     return project;
