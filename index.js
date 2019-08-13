@@ -51,15 +51,15 @@ function projectsList(repoData, languages) {
     repoLink.style.textAlign = "center";
     
 
-    let repoDesc = document.createElement('div');
-    repoDesc.textContent = `Desc.: ${repoData.description}`;
+    // let repoDesc = document.createElement('div');
+    // repoDesc.textContent = `Desc.: ${repoData.description}`;
     
     let repoLangs = document.createElement('div');
     repoLangs.classList.add('repo-lang');
-    repoLangs.textContent = languages;
+    repoLangs.textContent = `Language: ${repoData.language}`;
 
     project.appendChild(repoLink);
-    project.appendChild(repoDesc);
+    // project.appendChild(repoDesc);
     project.appendChild(repoLangs);
 
     return project;
