@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 #flex-grid-box {
@@ -47,7 +48,7 @@
 
 #about, #projects {
 
-    font-size: 2rem;
+    font-size: 3rem;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     place-self: center;
@@ -84,9 +85,10 @@
     overflow-y: auto;
     height: 100%;
     margin-bottom: 5%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     .repo-link {
         color: red;
+        font-weight: bold;
     }
 }
 
@@ -137,7 +139,7 @@
     }
 
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 768px) {
         display: none;
     }
 

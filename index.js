@@ -40,13 +40,13 @@ function projectsList(repoData, languages) {
     let project = document.createElement('div');
     project.classList.add("project-item");
 
-    let repoName = document.createElement('div');
-    // repoName.classList.add('repo-name');
-    // repoName.textContent = repoData.name;
+    let title = document.createElement('div');
+    title.classList.add('repo-name');
+    title.textContent = "Title: ";
 
     let repoLink = document.createElement('a');
     repoLink.classList.add('repo-link');
-    repoLink.textContent = `Title: ${repoData.name}`;
+    repoLink.textContent = repoData.name;
     repoLink.setAttribute('href', repoData.html_url);
     repoLink.style.textAlign = "center";
     
@@ -58,7 +58,9 @@ function projectsList(repoData, languages) {
     repoLangs.classList.add('repo-lang');
     repoLangs.textContent = `Language: ${repoData.language}`;
 
-    project.appendChild(repoLink);
+    
+    project.appendChild(title)
+    title.appendChild(repoLink);
     // project.appendChild(repoDesc);
     project.appendChild(repoLangs);
 
